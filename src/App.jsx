@@ -13,7 +13,7 @@ function App() {
               className={styles.avatar}
               src="../public/clásico-marco-de-oro-con-trazado-de-recorte.webp"
             />
-            <h1>Hola, soy Alejandro Desarrollador web front end</h1>
+            <h1>Hola, soy Ale desarrollador web front end</h1>
           </div>
           <div className={styles.contact}>
             <h2>Contactame</h2>

@@ -16,8 +16,14 @@
     }
     .interests {
       margin: 5% 0;
+      h3 {
+        padding-bottom: 1.5rem;
+      }
       .interestsIcons {
+        display: flex;
+        justify-content: space-evenly;
         font-size: 5.5rem;
+        padding: 0 35%;
       }
     }
   }
