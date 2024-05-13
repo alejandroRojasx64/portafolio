@@ -1,24 +1,95 @@
 import React from "react";
 import styles from "../styles/proyects.module.scss";
+import { delay, motion } from "framer-motion";
+
+const variants = {
+  inView: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      ease: "easeInOut",
+      delay: 1,
+      duration: 1,
+    },
+  },
+  hover: {
+    scale: 1.2,
+    transition: {
+      duration: 0.3,
+    },
+  },
+  exit: {
+    scale: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
 
 const Proyects = () => {
   return (
     <>
       <section className={styles.proyectsContainer}>
-        <h2>Proyectos</h2>
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 1.5 }}
+          viewport={{ once: true }}
+        >
+          Proyectos
+        </motion.h2>
         <div className={styles.proyects}>
-          <div className={styles.proyect}>
+          <motion.div
+            className={styles.proyect}
+            initial={{ opacity: 0, x: -200 }}
+            whileInView="inView"
+            whileHover="hover"
+            exit="exit"
+            variants={variants}
+            viewport={{ once: true }}
+          >
             <img src="../../public/proyect1.jpg" />
-            <a>ver en github</a>
-          </div>
-          <div className={styles.proyect}>
+            <a
+              target="_blank"
+              href="https://github.com/alejandroRojasx64/ecommerce-product-page"
+            >
+              ver en github
+            </a>
+          </motion.div>
+          <motion.div
+            className={styles.proyect}
+            initial={{ opacity: 0 }}
+            whileInView="inView"
+            whileHover="hover"
+            exit="exit"
+            variants={variants}
+            viewport={{ once: true }}
+          >
             <img src="../../public/proyect2.jpg" />
-            <a>ver en github</a>
-          </div>
-          <div className={styles.proyect}>
+            <a
+              target="_blank"
+              href="https://github.com/alejandroRojasx64/news-homepage.git"
+            >
+              ver en github
+            </a>
+          </motion.div>
+          <motion.div
+            className={styles.proyect}
+            initial={{ opacity: 0, x: 200 }}
+            whileInView="inView"
+            whileHover="hover"
+            exit="exit"
+            variants={variants}
+            viewport={{ once: true }}
+          >
             <img src="../../public/proyect3.jpg" />
-            <a>ver en github</a>
-          </div>
+            <a
+              target="_blank"
+              href="https://github.com/alejandroRojasx64/multi-step-form-page.git"
+            >
+              ver en github
+            </a>
+          </motion.div>
         </div>
       </section>
     </>

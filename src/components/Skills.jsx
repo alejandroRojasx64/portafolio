@@ -90,7 +90,7 @@ const Skills = () => {
               transition={{ ease: "easeInOut", delay: 1, duration: 1 }}
               viewport={{ once: true }}
             >
-              actualmente aprendiendo:
+              interesado en aprender:
             </motion.h3>
             <span className={styles.interestsIcons}>
               <motion.span
