@@ -1,8 +1,8 @@
 $background: #f1ece1;
-$grey-brown: #3a353f;
+$grey-brown: #211d25;
 $dark-grey: #505668;
 
-$titles: #180139;
+$titles: #1b181f;
 $color2: #803bff;
 $color3: #695d80;
 $buttons: #4f4c55;
@@ -19,12 +19,14 @@ $text: #2a2633;
     .greeting {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: baseline;
+      gap: 1.5rem;
       width: 100%;
       .avatar {
-        padding: 0 1rem 1rem 0;
-        width: 30%;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
+        background-color: white;
       }
     }
     .contact {

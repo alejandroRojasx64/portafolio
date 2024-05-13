@@ -1,23 +1,26 @@
 import React from "react";
+import styles from "../styles/proyects.module.scss";
 
 const Proyects = () => {
   return (
     <>
-      <h2>Proyects</h2>
-      <div className="proyectsContainer">
-        <div>
-          <img />
-          <span>ver en github</span>
+      <section className={styles.proyectsContainer}>
+        <h2>Proyectos</h2>
+        <div className={styles.proyects}>
+          <div className={styles.proyect}>
+            <img src="../../public/proyect1.jpg" />
+            <a>ver en github</a>
+          </div>
+          <div className={styles.proyect}>
+            <img src="../../public/proyect2.jpg" />
+            <a>ver en github</a>
+          </div>
+          <div className={styles.proyect}>
+            <img src="../../public/proyect3.jpg" />
+            <a>ver en github</a>
+          </div>
         </div>
-        <div>
-          <img />
-          <span>ver en github</span>
-        </div>
-        <div>
-          <img />
-          <span>ver en github</span>
-        </div>
-      </div>
+      </section>
     </>
   );
 };

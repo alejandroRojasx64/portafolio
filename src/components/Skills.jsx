@@ -5,7 +5,7 @@ import { Icon } from "@iconify-icon/react";
 const Skills = () => {
   return (
     <>
-      <div className={styles.skills}>
+      <section className={styles.skills}>
         <h2>Habilidades y herramientas</h2>
         <div className={styles.skillsContainer}>
           <span className={styles.icons}>
@@ -26,7 +26,7 @@ const Skills = () => {
             </span>
           </span>
         </div>
-      </div>
+      </section>
     </>
   );
 };
