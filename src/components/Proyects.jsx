@@ -39,7 +39,9 @@ const Proyects = () => {
           Proyectos
         </motion.h2>
         <div className={styles.proyects}>
-          <motion.div
+          <motion.a
+            href="https://product-page333.netlify.app/"
+            target="_blank"
             className={styles.proyect}
             initial={{ opacity: 0, x: -200 }}
             whileInView="inView"
@@ -48,15 +50,17 @@ const Proyects = () => {
             variants={variants}
             viewport={{ once: true }}
           >
-            <img src="../../public/proyect1.jpg" />
+            <img src="proyect1.jpg" />
             <a
               target="_blank"
               href="https://github.com/alejandroRojasx64/ecommerce-product-page"
             >
               ver en github
             </a>
-          </motion.div>
-          <motion.div
+          </motion.a>
+          <motion.a
+            href="https://marvelous-cannoli-487362.netlify.app/"
+            target="_blank"
             className={styles.proyect}
             initial={{ opacity: 0 }}
             whileInView="inView"
@@ -65,14 +69,14 @@ const Proyects = () => {
             variants={variants}
             viewport={{ once: true }}
           >
-            <img src="../../public/proyect2.jpg" />
+            <img src="proyect2.jpg" />
             <a
               target="_blank"
               href="https://github.com/alejandroRojasx64/news-homepage.git"
             >
               ver en github
             </a>
-          </motion.div>
+          </motion.a>
           <motion.div
             className={styles.proyect}
             initial={{ opacity: 0, x: 200 }}
@@ -82,7 +86,7 @@ const Proyects = () => {
             variants={variants}
             viewport={{ once: true }}
           >
-            <img src="../../public/proyect3.jpg" />
+            <img src="proyect3.jpg" />
             <a
               target="_blank"
               href="https://github.com/alejandroRojasx64/multi-step-form-page.git"
